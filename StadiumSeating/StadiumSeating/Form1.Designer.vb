@@ -23,25 +23,25 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtClassC = New System.Windows.Forms.TextBox()
+        Me.TxtClassB = New System.Windows.Forms.TextBox()
+        Me.txtClassA = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.lblClassA = New System.Windows.Forms.Label()
+        Me.lblClassB = New System.Windows.Forms.Label()
+        Me.lblClassC = New System.Windows.Forms.Label()
+        Me.lblTotal = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.btnCalculateRevenue = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.lblTotal = New System.Windows.Forms.Label()
-        Me.lblClassC = New System.Windows.Forms.Label()
-        Me.lblClassB = New System.Windows.Forms.Label()
-        Me.lblClassA = New System.Windows.Forms.Label()
-        Me.txtClassA = New System.Windows.Forms.TextBox()
-        Me.TxtClassB = New System.Windows.Forms.TextBox()
-        Me.txtClassC = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -61,6 +61,27 @@ Partial Class Form1
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
+        '
+        'txtClassC
+        '
+        Me.txtClassC.Location = New System.Drawing.Point(74, 134)
+        Me.txtClassC.Name = "txtClassC"
+        Me.txtClassC.Size = New System.Drawing.Size(100, 20)
+        Me.txtClassC.TabIndex = 6
+        '
+        'TxtClassB
+        '
+        Me.TxtClassB.Location = New System.Drawing.Point(74, 96)
+        Me.TxtClassB.Name = "TxtClassB"
+        Me.TxtClassB.Size = New System.Drawing.Size(100, 20)
+        Me.TxtClassB.TabIndex = 5
+        '
+        'txtClassA
+        '
+        Me.txtClassA.Location = New System.Drawing.Point(74, 56)
+        Me.txtClassA.Name = "txtClassA"
+        Me.txtClassA.Size = New System.Drawing.Size(100, 20)
+        Me.txtClassA.TabIndex = 4
         '
         'Label4
         '
@@ -115,6 +136,74 @@ Partial Class Form1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "GroupBox2"
         '
+        'lblClassA
+        '
+        Me.lblClassA.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblClassA.Location = New System.Drawing.Point(93, 23)
+        Me.lblClassA.Name = "lblClassA"
+        Me.lblClassA.Size = New System.Drawing.Size(100, 23)
+        Me.lblClassA.TabIndex = 8
+        '
+        'lblClassB
+        '
+        Me.lblClassB.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblClassB.Location = New System.Drawing.Point(93, 53)
+        Me.lblClassB.Name = "lblClassB"
+        Me.lblClassB.Size = New System.Drawing.Size(100, 23)
+        Me.lblClassB.TabIndex = 7
+        '
+        'lblClassC
+        '
+        Me.lblClassC.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblClassC.Location = New System.Drawing.Point(93, 93)
+        Me.lblClassC.Name = "lblClassC"
+        Me.lblClassC.Size = New System.Drawing.Size(100, 23)
+        Me.lblClassC.TabIndex = 6
+        '
+        'lblTotal
+        '
+        Me.lblTotal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblTotal.Location = New System.Drawing.Point(93, 134)
+        Me.lblTotal.Name = "lblTotal"
+        Me.lblTotal.Size = New System.Drawing.Size(101, 23)
+        Me.lblTotal.TabIndex = 5
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(6, 141)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(81, 13)
+        Me.Label9.TabIndex = 4
+        Me.Label9.Text = "Total Revenue:"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(27, 96)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(45, 13)
+        Me.Label8.TabIndex = 3
+        Me.Label8.Text = "Class C:"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(27, 56)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(45, 13)
+        Me.Label7.TabIndex = 2
+        Me.Label7.Text = "Class B:"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(27, 24)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(45, 13)
+        Me.Label6.TabIndex = 1
+        Me.Label6.Text = "Class A:"
+        '
         'btnCalculateRevenue
         '
         Me.btnCalculateRevenue.Location = New System.Drawing.Point(39, 189)
@@ -142,95 +231,6 @@ Partial Class Form1
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = True
         '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(27, 24)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(45, 13)
-        Me.Label6.TabIndex = 1
-        Me.Label6.Text = "Class A:"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(27, 56)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(45, 13)
-        Me.Label7.TabIndex = 2
-        Me.Label7.Text = "Class B:"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(27, 96)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(45, 13)
-        Me.Label8.TabIndex = 3
-        Me.Label8.Text = "Class C:"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(6, 141)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(81, 13)
-        Me.Label9.TabIndex = 4
-        Me.Label9.Text = "Total Revenue:"
-        '
-        'lblTotal
-        '
-        Me.lblTotal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lblTotal.Location = New System.Drawing.Point(93, 134)
-        Me.lblTotal.Name = "lblTotal"
-        Me.lblTotal.Size = New System.Drawing.Size(101, 23)
-        Me.lblTotal.TabIndex = 5
-        '
-        'lblClassC
-        '
-        Me.lblClassC.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lblClassC.Location = New System.Drawing.Point(93, 93)
-        Me.lblClassC.Name = "lblClassC"
-        Me.lblClassC.Size = New System.Drawing.Size(100, 23)
-        Me.lblClassC.TabIndex = 6
-        '
-        'lblClassB
-        '
-        Me.lblClassB.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lblClassB.Location = New System.Drawing.Point(93, 53)
-        Me.lblClassB.Name = "lblClassB"
-        Me.lblClassB.Size = New System.Drawing.Size(100, 23)
-        Me.lblClassB.TabIndex = 7
-        '
-        'lblClassA
-        '
-        Me.lblClassA.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lblClassA.Location = New System.Drawing.Point(93, 23)
-        Me.lblClassA.Name = "lblClassA"
-        Me.lblClassA.Size = New System.Drawing.Size(100, 23)
-        Me.lblClassA.TabIndex = 8
-        '
-        'txtClassA
-        '
-        Me.txtClassA.Location = New System.Drawing.Point(74, 56)
-        Me.txtClassA.Name = "txtClassA"
-        Me.txtClassA.Size = New System.Drawing.Size(100, 20)
-        Me.txtClassA.TabIndex = 4
-        '
-        'TxtClassB
-        '
-        Me.TxtClassB.Location = New System.Drawing.Point(74, 96)
-        Me.TxtClassB.Name = "TxtClassB"
-        Me.TxtClassB.Size = New System.Drawing.Size(100, 20)
-        Me.TxtClassB.TabIndex = 5
-        '
-        'txtClassC
-        '
-        Me.txtClassC.Location = New System.Drawing.Point(74, 134)
-        Me.txtClassC.Name = "txtClassC"
-        Me.txtClassC.Size = New System.Drawing.Size(100, 20)
-        Me.txtClassC.TabIndex = 6
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -242,7 +242,7 @@ Partial Class Form1
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Stadium Seating"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
